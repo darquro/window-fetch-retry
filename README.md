@@ -1,6 +1,14 @@
 # window-fetch-retry
 
-Adds retry functionality to the Fetch API.
+Adds retry functionality to [window.fetch polyfill (whatwg-fetch)](https://github.com/github/fetch).
+
+- [x] Retry count
+- [x] Retry delay
+- [x] Timeout (total of retries)
+
+## Requirements
+
+ECMAScript 2015
 
 ## Installation
 
@@ -20,11 +28,10 @@ fetch('/users.json', {
     retryDelay: 1000,
     timeout: 3000,
   })
-  .then(function(response) {
-    return response.json()
-  }).then(function(json) {
-    console.log('parsed json', json)
-  }).catch(function(ex) {
-    console.log('parsing failed', ex)
-  })
+  .then(res => res.json())
+  .then((json) => {
+    console.log('parsed json', json);
+  }).catch((ex) => {
+    console.log('parsing failed', ex);
+  });
 ```
