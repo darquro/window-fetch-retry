@@ -1,0 +1,30 @@
+{
+  "name": "window-fetch-retry",
+  "version": "1.0.0",
+  "description": "Extend window.fetch polyfill",
+  "main": "window-fetch-retry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darquro/window-fetch-retry.git"
+  },
+  "keywords": [
+    "fetch"
+  ],
+  "author": "darquro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darquro/window-fetch-retry/issues"
+  },
+  "homepage": "https://github.com/darquro/window-fetch-retry#readme",
+  "dependencies": {
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.2.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.7.0"
+  }
+}
